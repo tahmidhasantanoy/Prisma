@@ -14,7 +14,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-----
+// Define data models here
 model Post {
   id        Int      @id @default(autoincrement())
   createdAt DateTime @default(now())
