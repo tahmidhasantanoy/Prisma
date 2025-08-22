@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "tsnd --respawn src/create.ts"
+    "compile": "tsnd --respawn src/update.ts"
   },
   "keywords": [],
   "author": "",
