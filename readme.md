@@ -30,3 +30,8 @@
 
       Display Prisma debug info
       $ prisma debug
+
+
+      229 : upsert = update + insert place in update 
+      229 : select method just shows which are selected
+      220 : pagination & sorting will start.
