@@ -13,12 +13,23 @@ const operationalFunction = async () => {
   //     where: { id: 2 },
   //   });
 
-  const getSpecificFromDBOrError = await prisma.post.findFirstOrThrow({
-    where: { id: 11 },
+  // const getSpecificFromDBOrError = await prisma.post.findFirstOrThrow({
+  //   where: { id: 11 },
+  // });
+
+  const findUnique = await prisma.post.findUnique({
+    where: { id: 19 },
+    select: {
+      id: true,
+      title: true,
+      author: true,
+      createdAt: true,
+      updatedAt: true,
+    },
   });
 
-  //   console.log(getAllFromDB);
-  console.log({ getSpecificFromDBOrError });
+  console.log(findUnique);
+  // console.log({ getSpecificFromDBOrError });
 };
 
 operationalFunction();
