@@ -15,29 +15,71 @@ const operationalFunction = async () => {
   //     },
   //   });
 
-    // Add multiple table data using prisma
-  const postMultipleData = await prisma.post.createMany({
-    data: [
-      {
-        title: "This is title 1",
-        content: "This is content 1",
-        author: "Tahmid Hasan",
-        hashTag: "#dev",
-      },
-      {
-        title: "This is title 2",
-        content: "This is content 2",
-        author: "Tahmid Hasan",
-        hashTag: "#dev",
-      },
-      {
-        title: "This is title 3",
-        content: "This is content 3",
-        author: "Tahmid Hasan",
-        hashTag: "#dev",
-      },
-    ],
-  });
+  // Add multiple table data using prisma
+  // const postMultipleData = await prisma.post.createMany({
+  //   data: [
+  //     {
+  //       title: "This is title 1",
+  //       content: "This is content 1",
+  //       author: "Tahmid Hasan",
+  //       hashTag: "#dev",
+  //     },
+  //     {
+  //       title: "This is title 2",
+  //       content: "This is content 2",
+  //       author: "Tahmid Hasan",
+  //       hashTag: "#dev",
+  //     },
+  //     {
+  //       title: "This is title 3",
+  //       content: "This is content 3",
+  //       author: "Tahmid Hasan",
+  //       hashTag: "#dev",
+  //     },
+  //     {
+  //       title: "This is title 4",
+  //       content: "This is content 4",
+  //       author: "Tahmid Hasan",
+  //       hashTag: "#dev",
+  //     },
+  //     {
+  //       title: "This is title 5",
+  //       content: "This is content 5",
+  //       author: "Tahmid Hasan",
+  //       hashTag: "#dev",
+  //     },
+  //     {
+  //       title: "This is title 6",
+  //       content: "This is content 6",
+  //       author: "Tahmid Hasan",
+  //       hashTag: "#dev",
+  //     },
+  //     {
+  //       title: "This is title 7",
+  //       content: "This is content 7",
+  //       author: "Tahmid Hasan",
+  //       hashTag: "#dev",
+  //     },
+  //     {
+  //       title: "This is title 8",
+  //       content: "This is content 8",
+  //       author: "Tahmid Hasan",
+  //       hashTag: "#dev",
+  //     },
+  //     {
+  //       title: "This is title 9",
+  //       content: "This is content 9",
+  //       author: "Tahmid Hasan",
+  //       hashTag: "#dev",
+  //     },
+  //     {
+  //       title: "This is title 10",
+  //       content: "This is content 10",
+  //       author: "Tahmid Hasan",
+  //       hashTag: "#dev",
+  //     },
+  //   ],
+  // });
 
   console.log();
 };
